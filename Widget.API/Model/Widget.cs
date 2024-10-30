@@ -5,10 +5,13 @@
         public string Name { get; }
         public int Id { get; }
 
-        public Widget(string name, int id)
+        public bool IsWeekendSale { get; set; }
+
+        public Widget(string name, int id, bool wasWeekedSale)
         {
             Name = name;
             Id = id;
+            IsWeekendSale = wasWeekedSale;
         }
 
     }
